@@ -1,4 +1,4 @@
 RakutenWebService.configuration do |c|
-  c.application_id = ENV['APPLICATION_ID']
-  c.affiliate_id = ENV['AFFILIATE_ID']
+  c.application_id = ENV['RAKUTEN_APPLICATION_ID']
+  c.affiliate_id = ENV['RAKUTEN_AFFILIATE_ID']
 end
