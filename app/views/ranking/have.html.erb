@@ -1,0 +1,14 @@
+<h2>Haveランキング</h2>
+<div class="ranking_page">
+  <ul class="ranking">
+    <% @haves_count.each_with_index do |(item_id, people), i| %>
+      <% @item = Item.find_by(id: item_id) %>
+      <% klass = (0..2).include?(i) ? 'top3' : 'to10' #1位から3位まで%>
+      <li class="<%= klass %>">
+        <span class="rank"><%= i + 1 %>位</span>
+        <span class="image"><%= item_image_tag(@item) %></span>
+        <span class="title"><%= link_to @item.title, item_path(@item.id) %></span>
+      </li>
+    <% end %>
+  </ul>
+</div>

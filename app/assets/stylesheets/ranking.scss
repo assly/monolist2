@@ -1,0 +1,43 @@
+h2 { text-align: center; }
+
+.ranking_page{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.ranking {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    .rank {
+      padding-right: 10px;
+    }
+  }
+  .top3 {
+    .rank {
+      font-weight: bold;
+    }
+    img {
+      width: 180px;
+      height: 180px;
+    }
+    .image {
+      width: 200px;
+      height: 200px;
+      padding: 10px 10px;
+    }
+  }
+  .to10{
+    img {
+      width: 120px;
+      height: 120px;
+    }
+    .image {
+      width: 200px;
+      height: 200px;
+      padding: 10px 40px;
+    }
+  }
+}
